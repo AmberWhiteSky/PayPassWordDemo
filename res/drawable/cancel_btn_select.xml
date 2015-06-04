@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 取消按钮效果 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中未up时 -->
+    <item android:state_pressed="true"><shape>
+
+            <!--
+	        	颜色渐变
+	        	startColor:开始颜色
+	        	endColor:结束颜色
+	        	angle:渐变方向 
+	        -->
+            <gradient android:angle="270" android:endColor="#FFFFFF" android:startColor="#EAEAEA" />
+
+            <!--
+	        	按钮四个圆角
+	        	radius:半径            -->
+            <corners android:bottomLeftRadius="15px" />
+
+            <!-- 按钮文字和边缘距离(内边距) -->
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape></item>
+
+    <!-- 焦点 -->
+    <item android:state_focused="true"><shape>
+            <gradient android:angle="270" android:endColor="#FFFFFF" android:startColor="#FFFFFF" />
+
+            <corners android:bottomLeftRadius="15px" />
+
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape></item>
+
+    <!-- 无焦点 -->
+    <item><shape>
+            <gradient android:angle="270" android:endColor="#FFFFFF" android:startColor="#FFFFFF" />
+
+            <corners android:bottomLeftRadius="15px" />
+
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape></item>
+
+</selector>
